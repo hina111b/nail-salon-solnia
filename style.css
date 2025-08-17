@@ -112,13 +112,13 @@ section {
   transition: all 0.3s;
 }
 .header-logo img {
-  height: 50px;
+  height: 30px;
   width: auto;
 }
 
 .header-actions img,
 .header-actions svg {
-  height: 50px;  /* ロゴと同じ高さに統一 */
+  height: 30px;
   width: auto;    /* 縦横比を維持 */
 }
 .header-right {
