@@ -934,6 +934,15 @@ section {
   .footer-col {
     align-items: center;
   }
+  
+  .footer-nav {
+    border-top: 1px solid #ccc;    /* 上線 */
+    border-bottom: 1px solid #ccc; /* 下線 */
+    width: 100%;                   /* 横いっぱいに広げる */
+    margin: 0;
+    padding: 20px 0;
+    box-sizing: border-box;
+  }
 
   .info-layout {
     grid-template-columns: 1fr; /* Single column */
