@@ -100,7 +100,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
+  padding: 0 10px;
   position: fixed;
   width: 100%;
   height: 80px;
@@ -113,13 +113,20 @@ section {
 }
 
 .header-logo img {
-  height: 40px;
-  width: 100%;
+  height: 50px;   /* 高さを決め打ち */
+  width: auto;    /* 幅は自動で縦横比を維持 */
   object-fit: contain;
-  padding-right: 50px;
-  min-height: 50px;
+  padding-right: 20px;
 }
 
+/* ヘッダー内のアイコンサイズを固定 */
+.header-actions img,
+.header-actions svg {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  min-height: 28px;
+}
 .header-right {
   display: flex;
   align-items: center;
@@ -837,7 +844,7 @@ section {
 
   .header {
     height: 60px;
-    padding: 0 20px;
+    padding: 0;
   }
 
   .header-right {
