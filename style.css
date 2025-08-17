@@ -115,7 +115,6 @@ section {
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 12px; /* アイコン同士の間隔 */
 }
 
 .header-actions a {
@@ -125,7 +124,7 @@ section {
   text-decoration: none;
   font-weight: 500;
   position: relative;
-  padding: 0 8px; /* 縦線の左右に余白 */
+  padding: 0 5px; /* 縦線の左右に余白 */
 }
 
 .header-actions a:not(:last-child)::after {
