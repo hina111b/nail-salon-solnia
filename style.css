@@ -122,10 +122,10 @@ section {
 /* ヘッダー内のアイコンサイズを固定 */
 .header-actions img,
 .header-actions svg {
-  width: 28px;
-  height: 28px;
-  min-width: 28px;
-  min-height: 28px;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
 }
 .header-right {
   display: flex;
