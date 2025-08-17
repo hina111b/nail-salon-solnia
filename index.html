@@ -18,13 +18,41 @@
           --font-family-base: 'Noto Sans JP', sans-serif;
           --font-family-title: 'Playfair Display', serif;
         }
+  .info-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  </style>
+  <style>
+.note {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.note::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.note:hover::after {
+  width: 100%;
+}
   </style>
   <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
   <header class="header">
-    <a href="solnia-index.html" class="header-logo">
+    <a href="index.html" class="header-logo">
       <img src="img/solnia-logo2.png" alt="solnia ロゴ">
     </a>
     <div class="header-right">
@@ -82,8 +110,7 @@
         <h2 class="section-title">ABOUT</h2>
         <div class="about-content">
           <img src="img/solnia-logo0.PNG" alt="Nail Salon Solnia ロゴ" class="logo">
-          <p>静岡県焼津市にあるネイルサロンSolnia（ソルニア）です。
-            <br>Solniaでは、お客様一人ひとりのお好みや雰囲気に合わせて、指先をかわいく彩るお手伝いをしています。デザインはシンプルなものから、少し遊び心のあるアートまで幅広くご提案。ひとつひとつのネイルに、心がときめくような魔法をこめて、丁寧に施術しています。ご来店いただいた方が、ネイルを通して少しでも気分が明るくなったり、毎日がちょっと楽しみになったり。そんな小さな幸せをお届けできたらうれしいです。自分へのごほうびに、気分転換に、大切な日のために。落ち着いたプライベート空間で、ゆったりとした時間をお過ごしください。</p>
+          <p>静岡県焼津市にあるネイルサロンSolnia（ソルニア）です。Solniaでは、お客様一人ひとりのお好みや雰囲気に合わせて、指先をかわいく彩るお手伝いをしています。デザインはシンプルなものから、少し遊び心のあるアートまで幅広くご提案。ひとつひとつのネイルに、心がときめくような魔法をこめて、丁寧に施術しています。ご来店いただいた方が、ネイルを通して少しでも気分が明るくなったり、毎日がちょっと楽しみになったり。そんな小さな幸せをお届けできたらうれしいです。自分へのごほうびに、気分転換に、大切な日のために。落ち着いたプライベート空間で、ゆったりとした時間をお過ごしください。</p>
         </div>
         <div class="cta-button-container">
           <a href="#information" class="cta-button">salon info</a>
@@ -260,9 +287,7 @@
         </div>
         <div class="instagram-text">
           <h2>Instagram</h2>
-          <p>Instagramでは
-            <br>Solniaの日常や最新デザインをご紹介しています。
-            <br>ぜひのぞいてみてください。</p>
+          <p>InstagramではSolniaの日常や最新デザインをご紹介しています。ぜひのぞいてみてください。</p>
           <a href="https://www.instagram.com/nail_solnia" class="cta-footer-button2" target="_blank">
             <img src="img/Instagram-icon.png" alt="Instagram" class="button-icon">@solnia_nail</a>
         </div>
@@ -276,28 +301,28 @@
         </div>
         <div class="info-details">
           <div class="info-item">
-            <h3>Access</h3>
+            <h3><img src="img/icon-access.png" alt="" class="info-icon"> Access</h3>
             <p>〒425-0028
               <br>静岡県焼津市北4丁目10-3 ヨシナガビル2階</p>
           </div>
           <div class="info-item">
-            <h3>Hours</h3>
+            <h3><img src="img/icon-hours.png" alt="" class="info-icon"> Hours</h3>
             <p>9:00 - 20:00
               <br>定休日: なし</p>
           </div>
           <div class="info-item">
-            <h3>Reservation</h3>
+            <h3><img src="img/icon-reservation.png" alt="" class="info-icon"> Reservation</h3>
             <p>ご予約はInstagramまたはLINEから
               <br>
-              <a href="recerve-info.html">→ 予約時のお願いはこちら</a>
+              <a href="recerve-info.html" class="note">→ 予約時のお願いはこちら</a>
             </p>
           </div>
           <div class="info-item">
-            <h3>Payment</h3>
+            <h3><img src="img/icon-payment.png" alt="" class="info-icon"> Payment</h3>
             <p>現金払いのみ</p>
           </div>
           <div class="info-item">
-            <h3>Parking</h3>
+            <h3><img src="img/icon-parking.png" alt="" class="info-icon"> Parking</h3>
             <p>1台分あり</p>
           </div>
         </div>
@@ -323,9 +348,6 @@
             <ul>
               <li>
                 <a href="#about">ABOUT</a>
-              </li>
-              <li>
-                <a href="#news">NEWS</a>
               </li>
               <li>
                 <a href="#gallery">GALLERY</a>
