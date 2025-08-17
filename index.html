@@ -28,21 +28,16 @@
   <style>
 .note {
   position: relative;
-  text-decoration: none;
+  text-decoration: underline;
   color: inherit;
+  font-weight: normal;
+  transition: font-weight 0.3s ease;
 }
 
-.note::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 0;
-  height: 1px;
-  background-color: currentColor;
-  transition: width 0.3s ease;
+.note:hover {
+  font-weight: bold;
 }
-
+	  
 .note:hover::after {
   width: 100%;
 }
@@ -289,7 +284,7 @@
           <h2>Instagram</h2>
           <p>InstagramではSolniaの日常や最新デザインをご紹介しています。ぜひのぞいてみてください。</p>
           <a href="https://www.instagram.com/nail_solnia" class="cta-footer-button2" target="_blank">
-            <img src="img/Instagram-icon.png" alt="Instagram" class="button-icon">@solnia_nail</a>
+            <img src="img/Instagram-icon.svg" alt="Instagram" class="button-icon">@solnia_nail</a>
         </div>
       </div>
     </section>
